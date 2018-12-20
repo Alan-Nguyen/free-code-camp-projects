@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Survey Form</h1>
+    <div class="form-outer">
+      <p>Let me know how I can improve my website</p>
+      <form class="" action="index.html" method="get">
+        <div class="rowTab">
+          <div class="labels">
+            <label id="name-label" for="name">* Name: </label>
+          </div>
+          <div class="rightTab">
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="email-label" for="emails">* Email: </label>
+          </div>
+          <div class="rightTab">
+            <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="city-label" for="city">* City: </label>
+          </div>
+          <div class="rightTab">
+            <input type="text" name="city" id="city" class="input-field" placeholder="City">
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="currentPos">Which option best describes your current role?</label>
+          </div>
+          <div class="rightTab">
+            <select id="dropdown" class="dropdown" name="currentPos">
+              <option disabled value="Select an option"></option>
+              <option value="hr">HR</option>
+              <option value="projectManager">Project Manager</option>
+              <option value="softwareDeveploper">Software deveploper</option>
+              <option value="customer">Customer</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="userRating">* How likely is that you would contact me for an interview ?</label>
+          </div>
+          <div class="rightTab">
+            <ul class="ratingList">
+              <li class="radio"><label>Definitely<input name="radio-buttons" value="1" type="radio" class="userRating"></label></li>
+              <li class="radio"><label>Let me think<input name="radio-buttons" value="2" type="radio" class="userRating"></label></li>
+              <li class="radio"><label>Not sure<input name="radio-buttons" value="3" type="radio" class="userRating"></label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="most-like">What do you like most in my website: </label>
+          </div>
+          <div class="rightTab">
+            <select id="most-like" class="dropdown" name="mostLike">
+              <option disabled selected value>Selection an option</option>
+              <option value="color">Colors</option>
+              <option value="design">Design</option>
+              <option value="organizing">Organizing</option>
+              <option value="content">Content</option>
+            </select>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="preferences">Things that should be improved in the future<br>(Check all that apply):</label>
+            </div>
+            <div class="rightTab">
+              <ul id="preferences" style="list-style: none;">
+                <li class="checkbox"><<label><input name="prefer" value="1" type="checkbox" class="userRating"</label>Colors</li>
+                <li class="checkbox"><<label><input name="prefer" value="2" type="checkbox" class="userRating"</label>Design</li>
+                <li class="checkbox"><<label><input name="prefer" value="3" type="checkbox" class="userRating"</label>Fonts</li>
+                <li class="checkbox"><<label><input name="prefer" value="4" type="checkbox" class="userRating"</label>Organizing</li>
+                <li class="checkbox"><<label><input name="prefer" value="5" type="checkbox" class="userRating"</label>Content</li>
+                <li class="checkbox"><<label><input name="prefer" value="6" type="checkbox" class="userRating"</label>Media</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    </div>
+  </body>
+</html>
